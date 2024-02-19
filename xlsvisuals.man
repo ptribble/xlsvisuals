@@ -1,0 +1,40 @@
+.\" xlsextensions.man
+.\" Copyright 2024 Peter Tribble
+.\"
+.TH XLSVISUALS 1 "February 19, 2024" "X Version 11"
+.SH NAME
+xlsvisuals \- display visual information utility for X
+.SH SYNOPSIS
+.B "xlsvisuals"
+[\-display \fIdisplayname\fP]
+[\-depth \fIdepth\fP]
+[\-cc \fIclass\fP]
+[\-default]
+.SH DESCRIPTION
+.I Xlsvisuals
+is a simple utility for displaying information about the visuals
+available on an X server.
+.PP
+By default, information about available depths and colourmaps is shown,
+followed by a list of visuals, showing their ID, class, and depth.
+.PP
+If the \fB\-depth\fP option is used, only visuals of that depth are
+shown.
+.PP
+If the \fB\-cc\fP option is used, only visuals of the matching class
+are shown.
+.PP
+If the \fB\-default\fP option is used, only the default visual is
+shown.
+.PP
+If the above options are used, the general information is not
+shown. Only one option is valid, if multiple options are given the
+results are undefined.
+.SH ENVIRONMENT
+.TP 8
+.B DISPLAY
+To get the default host, display number, and screen.
+.SH "SEE ALSO"
+X(1), xwininfo(1), xdpyinfo(1), xprop(1), xrdb(1)
+.SH AUTHOR
+Peter Tribble

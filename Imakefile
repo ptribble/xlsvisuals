@@ -1,0 +1,7 @@
+XCOMM $XConsortium: Imakefile /main/7 1995/12/04 15:10:00 dpw $
+        DEPLIBS = $(DEPXLIB)
+LOCAL_LIBRARIES = $(XLIB)
+  SYS_LIBRARIES = MathLibrary
+
+
+SimpleProgramTarget(xlsvisuals)
